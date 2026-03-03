@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.8.4.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Laporan Penyuluh 2026&lt;/title&gt;
+    &lt;style&gt;
+        * { box-sizing: border-box; }
+        body { font-family: 'Times New Roman', serif; margin: 0; padding: 10px; background: #f0f0f0; }
+        
+        .container { 
+            width: 100%; max-width: 1100px; margin: auto; background: white; 
+            padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+
+        .header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 15px; padding-bottom: 10px; }
+        .header h2, .header h3 { margin: 2px 0; text-transform: uppercase; font-size: 1.1rem; font-weight: bold; }
+
+        /* Identitas  */
+        .info-section { 
+            display: grid; 
+            grid-template-columns: 150px 20px 1fr; 
+            gap: 2px 0; 
+            margin-bottom: 15px; 
+            max-width: 600px; 
+        }
+        .info-section label { font-weight: bold; font-size: 14px; display: flex; align-items: center; }
+        .info-section span { font-weight: bold; display: flex; align-items: center; justify-content: center; }
+        
+        input[type=&quot;text&quot;], input[type=&quot;date&quot;], select { 
+            padding: 4px 10px; border: 1px solid #000000; border-radius: 4px; width: 100%; font-family: inherit;
+        }
+
+        /* TABEL STRUKTUR  */
+        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        th, td { border: 1px solid #000; padding: 6px; text-align: center; vertical-align: middle; }
+        th { background: #f2f2f2; font-size: 11px; text-transform: uppercase; font-weight: bold; }
+
+        .col-no { width: 45px; }
+        .col-data { width: calc((100% - 45px) / 5); }
+
+        /* TEKNIK MENGHILANGKAN TEKS &quot;TIDAK ADA FILE&quot; */
+        input[type=&quot;file&quot;] {
+            color: transparent; /* Membuat teks di sebelah tombol transparan */
+            width: 90px; /* Membatasi lebar agar hanya tombol yang terlihat */
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .preview-box { 
+            width: 120px; height: 210px; border: 1px dashed #bbb; margin: 5px auto; 
+            display: flex; align-items: center; justify-content: center; background: #fafafa; overflow: hidden;
+        }
+        .preview-box img { width: 100%; height: 100%; display: none; object-fit: cover; }
+
+        /* Responsive Card HP */
+        @media screen and (max-width: 768px) {
+            .info-section { grid-template-columns: 120px 15px 1fr; width: 100%; }
+            table, thead, tbody, th, td, tr { display: block; }
+            table { table-layout: auto; }
+            thead { display: none; }
+            tr { margin-bottom: 25px; border: 2px solid #2c3e50; border-radius: 10px; padding: 10px; background: #fff; }
+            td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 45%; text-align: left; min-height: 45px; display: flex; align-items: center; width: 100% !important; }
+            td:before { position: absolute; left: 10px; width: 40%; font-weight: bold; font-size: 10px; content: attr(data-label); color: #2c3e50; text-transform: uppercase; }
+        }
+
+        .controls { margin-top: 15px; display: flex; gap: 10px; }
+        .btn { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; font-weight: bold; color: white; }
+        .btn-add { background: #27ae60; flex: 1; }
+        .btn-remove { background: #e74c3c; flex: 1; }
+        .action-area { text-align: center; margin-top: 30px; }
+        .btn-print { background: #2c3e50; width: 100%; padding: 15px; font-size: 16px; color: white; cursor: pointer; border-radius: 6px; border: none; font-weight: bold; }
+
+        @media print {
+            @page { size: A4; margin: 3cm; }
+            .controls, .action-area, input[type=&quot;file&quot;] { display: none !important; }
+            body { background: white; padding: 0; margin: 0; }
+            .container { box-shadow: none; border: none; width: 100%; padding: 0; }
+            input, select { border: none !important; background: transparent !important; padding: 0 !important; appearance: none !important; }
+            table { display: table !important; table-layout: fixed !important; }
+            thead { display: table-header-group !important; }
+            tr { display: table-row !important; border: 1px solid #000 !important; page-break-inside: avoid; }
+            td { display: table-cell !important; border: 1px solid #000 !important; }
+            .preview-box { border: none !important; width: 120px !important; height: 210px !important; }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;h2&gt;LAPORAN PENDERASAN INFORMASI DAN PEMBANGUNAN PERTANIAN&lt;/h2&gt;
+        &lt;h3&gt;PENYULUH PERTANIAN&lt;/h3&gt;
+        &lt;h3&gt;TAHUN 2026&lt;/h3&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;info-section&quot;&gt;
+        &lt;label&gt;PERIODE&lt;/label&gt; &lt;span&gt;:&lt;/span&gt;
+        &lt;select&gt;
+            &lt;option&gt;BULAN JANUARI&lt;/option&gt;&lt;option&gt;BULAN FEBRUARI&lt;/option&gt;&lt;option&gt;BULAN MARET&lt;/option&gt;
+            &lt;option&gt;BULAN APRIL&lt;/option&gt;&lt;option&gt;BULAN MEI&lt;/option&gt;&lt;option&gt;BULAN JUNI&lt;/option&gt;
+            &lt;option&gt;BULAN JULI&lt;/option&gt;&lt;option&gt;BULAN AGUSTUS&lt;/option&gt;&lt;option&gt;BULAN SEPTEMBER&lt;/option&gt;
+            &lt;option&gt;BULAN OKTOBER&lt;/option&gt;&lt;option&gt;BULAN NOVEMBER&lt;/option&gt;&lt;option&gt;BULAN DESEMBER&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;label&gt;NAMA PENYULUH&lt;/label&gt; &lt;span&gt;:&lt;/span&gt; &lt;input type=&quot;text&quot; placeholder=&quot;...&quot;&gt;
+        &lt;label&gt;NIP&lt;/label&gt; &lt;span&gt;:&lt;/span&gt; &lt;input type=&quot;text&quot; placeholder=&quot;...&quot;&gt;
+        &lt;label&gt;WILBIN/WKPP&lt;/label&gt; &lt;span&gt;:&lt;/span&gt; &lt;input type=&quot;text&quot; placeholder=&quot;...&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th rowspan=&quot;2&quot; class=&quot;col-no&quot;&gt;No. &lt;/th&gt;
+                &lt;th rowspan=&quot;2&quot; class=&quot;col-data&quot;&gt;TANGGAL &lt;/th&gt;
+                &lt;th rowspan=&quot;2&quot; class=&quot;col-data&quot;&gt;JUDUL KONTEN &lt;/th&gt;
+                &lt;th colspan=&quot;3&quot;&gt;EVIDEN &lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;LIKE&lt;/th&gt;
+                &lt;th&gt;COMMENT&lt;/th&gt;
+                &lt;th&gt;SHARE&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody id=&quot;tableBody&quot;&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;div class=&quot;controls&quot;&gt;
+        &lt;button class=&quot;btn btn-add&quot; type=&quot;button&quot; onclick=&quot;addRow()&quot;&gt;+ Tambah Baris&lt;/button&gt;
+        &lt;button class=&quot;btn btn-remove&quot; type=&quot;button&quot; onclick=&quot;removeRow()&quot;&gt;- Hapus Baris&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;action-area&quot;&gt;
+        &lt;button class=&quot;btn-print&quot; type=&quot;button&quot; onclick=&quot;window.print()&quot;&gt;CETAK / SIMPAN PDF&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+
+window.print();
+    let count = 0;
+    const tableBody = document.getElementById('tableBody');
+
+    function addRow() {
+        count++;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            &lt;td data-label=&quot;No.&quot;&gt;${count}.&lt;/td&gt;
+            &lt;td data-label=&quot;Tanggal&quot;&gt;&lt;input type=&quot;date&quot;&gt;&lt;/td&gt;
+            &lt;td data-label=&quot;Judul&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;...&quot;&gt;&lt;/td&gt;
+            &lt;td data-label=&quot;Like&quot;&gt;&lt;input type=&quot;file&quot; accept=&quot;image/*&quot; onchange=&quot;pv(this, 'l${count}')&quot;&gt;&lt;div class=&quot;preview-box&quot;&gt;&lt;img id=&quot;l${count}&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+            &lt;td data-label=&quot;Com&quot;&gt;&lt;input type=&quot;file&quot; accept=&quot;image/*&quot; onchange=&quot;pv(this, 'c${count}')&quot;&gt;&lt;div class=&quot;preview-box&quot;&gt;&lt;img id=&quot;c${count}&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+            &lt;td data-label=&quot;Share&quot;&gt;&lt;input type=&quot;file&quot; accept=&quot;image/*&quot; onchange=&quot;pv(this, 's${count}')&quot;&gt;&lt;div class=&quot;preview-box&quot;&gt;&lt;img id=&quot;s${count}&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+        `;
+        tableBody.appendChild(tr);
+    }
+
+    function removeRow() {
+        if (count &gt; 2) { tableBody.removeChild(tableBody.lastChild); count--; }
+        else { alert(&quot;Minimal harus ada 2 baris laporan.&quot;); }
+    }
+
+    function pv(input, id) {
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) =&gt; {
+                const img = document.getElementById(id);
+                img.src = e.target.result;
+                img.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () =&gt; {
+        addRow(); addRow(); 
+        
+    });
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>

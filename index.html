@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#333" />
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>LCS, Tanggal, Nama Penyuluh</title>
     <style>
@@ -108,6 +108,9 @@
             body { background: white; padding: 0; margin: 0; }
             .container { box-shadow: none; border: none; width: 100%; padding: 0; max-width: 100%; }
             
+            /* Merapatkan spasi info-section saat cetak */
+            .info-section { gap: 2px 0 !important; margin-bottom: 15px !important; }
+
             tr { 
                 page-break-inside: avoid !important; 
                 break-inside: avoid !important; 
@@ -118,15 +121,22 @@
                 display: table-row-group !important; 
             }
             
-            /* Penambahan warna hijau pada header saat cetak */
             th { 
-                background-color: #30a677 !important; 
+                background-color: #34cf91 !important; 
                 color: black !important;
                 -webkit-print-color-adjust: exact; 
                 print-color-adjust: exact;
             }
 
-            input[type="text"], input[type="date"], select { border: none !important; background: transparent !important; -webkit-appearance: none; -moz-appearance: none; appearance: none; padding-left: 0 !important; }
+            input[type="text"], input[type="date"], select { 
+                border: none !important; 
+                background: transparent !important; 
+                -webkit-appearance: none; 
+                -moz-appearance: none; 
+                appearance: none; 
+                padding: 2px 0 !important; /* Padding lebih kecil */
+            }
+            
             table { display: table !important; table-layout: fixed !important; width: 100% !important; border-collapse: collapse !important; }
             tbody { display: table-row-group !important; }
             td { display: table-cell !important; border: 1px solid #000 !important; padding: 6px !important; vertical-align: middle !important; }
